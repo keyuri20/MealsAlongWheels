@@ -367,9 +367,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 @Override
                 public boolean onMyLocationButtonClick() {
                     if (ContextCompat.checkSelfPermission(MapsActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+                        mMap.setMyLocationEnabled(true);
                         Location mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-                        FetchBusStops task = new FetchBusStops();
-                        task.execute(mLastLocation);
+                        if(mLastLocation!=null) {
+                            FetchBusStops task = new FetchBusStops();
+                            task.execute(mLastLocation);
+                            return false;
+                        }
                     }
                     return false;
                 }
