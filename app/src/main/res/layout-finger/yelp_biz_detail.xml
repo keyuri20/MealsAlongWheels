@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/b">
+
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="it's dummy data"
+        android:textSize="25sp"
+        android:layout_weight="0.8"
+        android:textColor="#ffffff"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp"
+        android:typeface="serif"/>
+
+    <TextView
+        android:id="@+id/textCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="it's dummy data"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:layout_weight="0.8"
+        android:typeface="serif"
+        android:layout_below="@+id/textRating"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Direction"
+        android:id="@+id/buttonDirection"
+        android:layout_marginBottom="94dp"
+        android:typeface="serif"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="54dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Website"
+        android:id="@+id/b2"
+        android:typeface="serif"
+        android:layout_alignTop="@+id/buttonDirection"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="79dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123 123 1234"
+        android:id="@+id/textPhone"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:typeface="serif"
+        android:autoLink="phone"
+        android:layout_below="@+id/textName"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="178dp"
+        android:layout_height="38dp"
+        android:id="@+id/ratingImage"
+        android:layout_below="@+id/textPhone"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="it's dummy data"
+        android:textSize="15sp"
+        android:textColor="#ffffff"
+        android:layout_weight="0.8"
+        android:typeface="serif"
+        android:layout_below="@+id/ratingImage"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
